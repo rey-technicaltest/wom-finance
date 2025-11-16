@@ -6,8 +6,8 @@ import { EXCEPTION_MESSAGE } from "../utils/exceptionMessage";
 import Order, { TransactionStatus } from "../models/Transaction";
 import TransactionDetail from "../models/TransactionDetail";
 import { convertObject } from "../utils/tools";
-import { adjustmentHoldStock } from "../utils/QueryHelper";
 import { paymentStatus } from "../models/PaymentCallback";
+import { adjustmentHoldStock } from "../utils/queryHelper";
 
 export const getTransactionService = async (payload: {
   transactionId: string;
