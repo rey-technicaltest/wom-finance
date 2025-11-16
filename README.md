@@ -78,5 +78,7 @@ npm install
 
 npm run migrate
 
+cp .env.example .env
+
 npm run dev
 ```
