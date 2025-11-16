@@ -7,7 +7,7 @@ import Order, { TransactionStatus } from "../models/Transaction";
 import TransactionDetail from "../models/TransactionDetail";
 import { convertObject } from "../utils/tools";
 import { paymentStatus } from "../models/PaymentCallback";
-import { adjustmentHoldStock } from "../utils/queryHelper";
+import { adjustmentHoldStock, checkStock } from "../utils/queryHelper";
 
 export const getTransactionService = async (payload: {
   transactionId: string;
@@ -98,6 +98,19 @@ export const checkoutService = (cartId: string, userId: string) => {
       redirectUrl: `https://payment.com/pay/${order.id}`,
       paymentReference: `PAY-${order.id}`,
     };
+
+    const checStock = cart.items.map(
+      (item: { bookId: string; quantity: number }) => {
+        return item;
+      }
+    );
+
+    const checkAvailableStock = await checkStock(checStock);
+
+    if (checkAvailableStock === false)
+      throw new CustomException(EXCEPTION_MESSAGE.UNPROCESSABLE_ENTITY, {
+        message: "Insufficient stock",
+      });
 
     const updateStock = await cart.items.map(
       (item: {

@@ -12,7 +12,7 @@ export const authMiddleware = async (
     const authHeader = req.headers.authorization;
     if (!authHeader) return res.status(401).json({ message: "Missing token" });
 
-    if (authHeader.split(" ")[1] != "Bearer") {
+    if (authHeader.split(" ")[0] != "Bearer") {
       return res.status(401).json({
         message: "Invalid token format",
         code: "INVALID_TOKEN_FORMAT",

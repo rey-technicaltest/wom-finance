@@ -19,3 +19,20 @@ export const adjustmentStock = async (
     transaction,
   });
 };
+
+export const checkStock = async (items: { id: number; quantity: number }[]) => {
+  const books = await Book.findAll({
+    where: {
+      id: items.map((item) => item.id),
+    },
+  });
+
+  for (const item of items) {
+    const book = books.find((b) => b.id === item.id);
+    if (!book || book.stock - book.holdStock < item.quantity) {
+      return false;
+    }
+  }
+
+  return true;
+};
