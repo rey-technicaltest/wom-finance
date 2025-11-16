@@ -1,4 +1,4 @@
-import { adjustmentStock } from "../utils/QueryHelper";
+import { adjustmentStock } from "../utils/queryHelper";
 import { Book } from "../models";
 import { CustomException } from "../utils/customException";
 import { EXCEPTION_MESSAGE } from "../utils/exceptionMessage";

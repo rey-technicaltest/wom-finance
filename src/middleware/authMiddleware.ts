@@ -1,4 +1,3 @@
-import { convertObject } from "./../utils/tools";
 import User from "../models/User";
 import { verifyToken } from "../utils/jwt";
 import { Request, Response, NextFunction } from "express";

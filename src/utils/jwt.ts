@@ -1,6 +1,6 @@
 import jwt, { JwtPayload } from "jsonwebtoken";
-import { CustomException } from "./CustomException";
-import { EXCEPTION_MESSAGE } from "./ExceptionMessage";
+import { CustomException } from "./customException";
+import { EXCEPTION_MESSAGE } from "./exceptionMessage";
 
 const JWT_SECRET = process.env.JWT_SECRET || "dev-secret";
 
