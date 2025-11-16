@@ -1,0 +1,21 @@
+{"level":"error","message":"email not found","timestamp":"15-11-2025 22:38:08.001+07:00"}
+{"level":"warn","message":"email not found","status":"BAD_REQUEST","timestamp":"15-11-2025 22:38:08.007+07:00"}
+{"level":"error","timestamp":"15-11-2025 22:40:13.570+07:00"}
+{"level":"error","message":"WHERE parameter \"userId\" has invalid \"undefined\" value","status":"ERROR","timestamp":"15-11-2025 22:40:13.574+07:00"}
+{"level":"error","timestamp":"15-11-2025 22:40:43.769+07:00"}
+{"level":"error","message":"WHERE parameter \"userId\" has invalid \"undefined\" value","status":"ERROR","timestamp":"15-11-2025 22:40:43.775+07:00"}
+{"level":"error","timestamp":"15-11-2025 22:41:02.239+07:00"}
+{"level":"error","message":"WHERE parameter \"userId\" has invalid \"undefined\" value","status":"ERROR","timestamp":"15-11-2025 22:41:02.243+07:00"}
+{"level":"error","timestamp":"15-11-2025 22:44:29.544+07:00"}
+{"level":"error","message":"WHERE parameter \"userId\" has invalid \"undefined\" value","status":"ERROR","timestamp":"15-11-2025 22:44:29.549+07:00"}
+{"level":"error","name":"SequelizeDatabaseError","original":{"code":"ER_NO_SUCH_TABLE","errno":1146,"parameters":[1,2,2,"2025-11-15 15:51:44","2025-11-15 15:51:44"],"sql":"INSERT INTO `CartItems` (`id`,`cartId`,`bookId`,`quantity`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?);","sqlMessage":"Table 'wom_finance.CartItems' doesn't exist","sqlState":"42S02"},"parameters":[1,2,2,"2025-11-15 15:51:44","2025-11-15 15:51:44"],"parent":{"code":"ER_NO_SUCH_TABLE","errno":1146,"parameters":[1,2,2,"2025-11-15 15:51:44","2025-11-15 15:51:44"],"sql":"INSERT INTO `CartItems` (`id`,`cartId`,`bookId`,`quantity`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?);","sqlMessage":"Table 'wom_finance.CartItems' doesn't exist","sqlState":"42S02"},"sql":"INSERT INTO `CartItems` (`id`,`cartId`,`bookId`,`quantity`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?);","timestamp":"15-11-2025 22:51:44.878+07:00"}
+{"level":"error","message":"Table 'wom_finance.CartItems' doesn't exist","status":"ERROR","timestamp":"15-11-2025 22:51:44.880+07:00"}
+{"level":"error","name":"SequelizeDatabaseError","original":{"code":"ER_BAD_FIELD_ERROR","errno":1054,"parameters":[2,2,2,"2025-11-15 15:52:30","2025-11-15 15:52:30"],"sql":"INSERT INTO `CartDetails` (`id`,`cartId`,`bookId`,`quantity`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?);","sqlMessage":"Unknown column 'updatedAt' in 'field list'","sqlState":"42S22"},"parameters":[2,2,2,"2025-11-15 15:52:30","2025-11-15 15:52:30"],"parent":{"code":"ER_BAD_FIELD_ERROR","errno":1054,"parameters":[2,2,2,"2025-11-15 15:52:30","2025-11-15 15:52:30"],"sql":"INSERT INTO `CartDetails` (`id`,`cartId`,`bookId`,`quantity`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?);","sqlMessage":"Unknown column 'updatedAt' in 'field list'","sqlState":"42S22"},"sql":"INSERT INTO `CartDetails` (`id`,`cartId`,`bookId`,`quantity`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?);","timestamp":"15-11-2025 22:52:30.764+07:00"}
+{"level":"error","message":"Unknown column 'updatedAt' in 'field list'","status":"ERROR","timestamp":"15-11-2025 22:52:30.767+07:00"}
+{"level":"error","message":"Insufficient stock for the requested book.","timestamp":"15-11-2025 22:56:35.301+07:00"}
+{"level":"warn","message":"Insufficient stock for the requested book.","status":"UNPROCESSABLE_ENTITY","timestamp":"15-11-2025 22:56:35.306+07:00"}
+{"level":"warn","message":"\"type\" is required","status":"UNPROCESSABLE_ENTITY","timestamp":"15-11-2025 23:43:28.725+07:00"}
+{"level":"error","timestamp":"15-11-2025 23:46:38.820+07:00"}
+{"level":"error","message":"Cannot read properties of undefined (reading '0')","status":"ERROR","timestamp":"15-11-2025 23:46:38.826+07:00"}
+{"level":"error","timestamp":"15-11-2025 23:48:06.431+07:00"}
+{"level":"error","message":"Cannot read properties of undefined (reading '0')","status":"ERROR","timestamp":"15-11-2025 23:48:06.432+07:00"}
